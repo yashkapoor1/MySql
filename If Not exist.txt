@@ -1,0 +1,25 @@
+use test 
+DELIMITER $$
+
+CREATE PROCEDURE test()
+
+BEGIN
+
+select * from test.new_table t1 left join test1.table1table1 t2 on t1.id = t2.id;
+
+create DATABASE IF not EXISTS test2;
+END $$
+
+DELIMITER ;
+
+call test()
+
+
+===============================
+
+CALL new_procedure_procedure_name();
+
+
+
+select * from test.new_table t1 left join test1.table1 t2 on t1.id = t2.id;
+ CREATE SCHEMA IF NOT EXISTS `test2` ;
